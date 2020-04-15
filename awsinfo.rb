@@ -1,8 +1,8 @@
 class Awsinfo < Formula
     desc "get AWS info using simple search terms"
     homepage "https://github.com/carterjones/awsinfo"
-    url "https://github.com/carterjones/awsinfo/archive/v0.0.1.tar.gz"
-    sha256 "5e89543aaddefa0cc4445225bd542b4a9be76e1a2733c6a2789c2df4d54e3dcf"
+    url "https://github.com/carterjones/awsinfo/archive/v0.0.2.tar.gz"
+    sha256 "774939d92b16bf1a9600e275e7a38f5623aa3489a62120fd9137a197ed954401"
 
     depends_on "go" => :build
 
@@ -14,9 +14,9 @@ class Awsinfo < Formula
     end
 
     test do
-        assert_match /usage: awsinfo/, shell_output("#{bin}/awsinfo")
-        assert_match /usage: elbinfo/, shell_output("#{bin}/elbinfo")
-        assert_match /usage: instanceinfo/, shell_output("#{bin}/instanceinfo")
-        assert_match /usage: r53info/, shell_output("#{bin}/r53info")
+        assert_match /usage:/, shell_output("#{bin}/awsinfo")
+        assert_match /usage:/, shell_output("#{bin}/elbinfo")
+        assert_match /usage:/, shell_output("#{bin}/instanceinfo")
+        assert_match /usage:/, shell_output("#{bin}/r53info")
     end
   end
