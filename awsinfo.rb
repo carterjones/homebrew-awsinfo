@@ -1,8 +1,8 @@
 class Awsinfo < Formula
     desc "get AWS info using simple search terms"
     homepage "https://github.com/carterjones/awsinfo"
-    url "https://github.com/carterjones/awsinfo/archive/v0.0.4.tar.gz"
-    sha256 "4de2d772fb03530566f8f2caa9ebd337ac54cec630f3396bea26f6f33d3039ce"
+    url "https://github.com/carterjones/awsinfo/archive/v0.0.5.tar.gz"
+    sha256 "f16f591ae06d34979000f6baee28be2369cdf5601e59264b2cab2b56fa12af78"
 
     depends_on "go" => :build
 
